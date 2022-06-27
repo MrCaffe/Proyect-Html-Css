@@ -1,0 +1,56 @@
+@mixin logotype {
+	position: absolute;
+	z-index: 3;
+	top: 5px;
+}	
+
+@mixin show {
+	@media all and (min-width: 1400px) {		
+	display: inline-block;
+
+	}
+}	
+
+@mixin hide {
+	@media all and (min-width: 0px) {		
+	display: none;
+	}
+}
+
+@mixin inactive {
+	text-decoration: none;
+	color: map-get($colors, color-gray);
+}
+
+@mixin hover {
+	transform: scale(1.1);
+}
+
+@mixin active {
+	text-decoration: underline white;
+	color: map-get($colors, color-white);
+}	
+
+@mixin animation-hover {
+	transition: all 200ms ease-in-out;
+}	
+
+@mixin querie-nav {
+	@media all and (min-width: 992px) {		
+		margin-left: map-get($spacesRem, small);
+		margin-right: map-get($spacesRem, small);
+		width: 97.3%;
+	}
+	@media all and (min-width: 1400px) {		
+		margin-left: map-get($spacesRem, extra-large);
+		margin-right: map-get($spacesRem, extra-large);
+		width: 93.333%;
+	}
+}	
+
+@mixin interior-form {
+	border-style: outset;
+	border-color: map-get($colors, color-light-blue);
+	background-color: map-get($colors, color-bars);
+	color: map-get($colors, color-white);
+}	

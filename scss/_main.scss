@@ -1,0 +1,87 @@
+// Default Configuration
+* {
+	margin: 0;
+	padding: 0;
+}	
+
+body {
+	background-color: #e9e9e9;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+	background-size: cover;
+	background-position: center;
+}	
+
+// Container Header Logo
+.container-logotype-h {
+	@include logotype;
+	@include hide;
+	@include show;
+}
+
+
+// Container Nav
+.container-nav {
+	font-family: 'Montserrat', sans-serif;
+	background-color: map-get($colors, color-bars);
+	font-size: 21px;
+	font-weight: map-get($font-weights, bold);
+	@include querie-nav;
+
+	.inactive-nav {
+		@include inactive;
+		@include querie-nav;
+		&:hover {
+			@include hover;
+			color: map-get($colors, color-light-blue);
+		}
+	}
+
+	.active-nav {
+		@include active;
+		@include querie-nav;
+		&:hover{
+			@include hover;
+		}
+	}
+
+	.animation {
+		@include animation-hover;
+	}
+}
+
+//Container Main Login
+.container-login {
+	font-family: 'Roboto', sans-serif;
+	.login-interior {
+		@include interior-form;
+	}
+}
+
+// Container Main Booking
+.container-booking {
+	font-family: 'Montserrat', sans-serif;
+	.booking-form {
+		@include interior-form;
+	}
+}	
+
+// Container Footer
+footer {
+	font-family: 'Montserrat', sans-serif;
+	background-color: map-get($colors, color-bars);
+	text-align: center;
+	font-weight: map-get($font-weights, bold);
+	color: map-get($colors, color-white);
+	font-size: 20px;
+	.container-logotype-f {
+		padding-top: map-get($spacesEm, very-small);
+	}
+
+	.container-direction {
+		padding-top: map-get($spacesEm, very-small);
+	}
+
+	.container-social {
+		padding-top: map-get($spacesEm, very-small);
+	}	
+}

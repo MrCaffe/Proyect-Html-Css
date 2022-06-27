@@ -7,12 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-
   },
   "author": "Joel Mansilla",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.18"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.8.3"
   }
 }

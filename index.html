@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- Awesome Fonts -->
+    <script src="https://kit.fontawesome.com/5c3be41b53.js" crossorigin="anonymous"></script>
+
     <!-- Css Styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css"> 
     
@@ -27,23 +30,173 @@
 
 <body>
     <!-- Header Start -->
-    <header class="container-fluid g-0 mt-4">
-      <p> HEADER </p>
+    <header class="container-fluid g-0">
+
+      <!-- Header Logo Start -->
+      <section class="container-logotype-h">
+        <div class="col-12">
+          <img src="assets/logo.png" class="rounded-circle border border-secondary border border-3" alt="logo bus company">
+        </div>
+      </section>
+      <!-- Header Logo End -->  
+
+      <!-- Nav Start -->
+      <section class="container-nav mt-5">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="inactive-nav animation" href="#"> Bus Company </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="active-nav animation" aria-current="page" href="#"> Home </a>
+                  <a class="inactive-nav animation" href="#"> Boooking </a>
+                  <a class="inactive-nav animation" href="#"> Contact </a>
+                  <a class="inactive-nav animation disabled" href="#" tabindex="-1" aria-disabled="true"> Register </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- Nav End -->
     </header>
     <!-- Header End -->
 
     <!-- Main Start -->
     <main class="container-fluid g-0 mt-4">
-      <section>
-        <p> MAIN </p>
+      <!-- Carousel Start -->
+       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/carousel.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/carousel.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/carousel.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carousel End -->
+
+
+      <!-- Login Start -->
+      <section class="container-login">
+        <div class="col-12 d-flex justify-content-center mt-3"> 
+          <p class="fs-3 badge bg-primary"> ¡Account Login! </p> 
+        </div>
+
+        <div class="col-12 mt-4 d-flex justify-content-center">
+          <form class="text-center login-interior p-4">
+            <label for="exampleInputEmail1" class="form-label"> Email </label>
+            <input type="email" class="form-control focus" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Ingrese Su Correo">
+
+            <label for="exampleInputPassword1" class="form-label"> Password </label>
+            <input type="password" class="form-control focus" id="exampleInputPassword1" placeholder="Ingrese Su Contraseña">
+
+            <div class="form-check m-3">
+              <input type="checkbox" name="checkbox" value="1" required> I agree with all the <a href="#"> Terms and Conditions </a> 
+            </div>
+              <input type="submit" class="btn-sm btn btn-primary border-3 mx-3" name="ingresar" value="Login">
+              <a href="#" class="btn-sm btn btn-primary border-3 mx-3"> Register  </a>
+          </form>
+        </div>
       </section>
+      <hr/>
+      <!-- Login End -->
+
+      <!-- Booking Form Start -->
+      <section class="container-booking">
+        <div class="col-12 d-flex justify-content-center mt-3"> 
+          <p class="fs-3 badge bg-success"> ¡Online Bus Tickets! </p> 
+        </div>
+
+        <div class="col-12 mt-4 d-flex justify-content-center">
+          <form class="text-center p-4 booking-form">
+            <label> Origin </label> <input type="text" class="form-control" placeholder="City"> </input>
+          <label> Destination </label> <input type="text" class="form-control" placeholder="City"> </input>
+          
+
+          <div class="input-grp">
+            <label> Departing </label> <input type="date" class="form-control select-date" > </input>
+          </div>
+
+          <div class="input-grp">
+            <label> Passanger </label> <input type="number" class="form-control" value="1"> </input>
+          </div>
+
+          <div class="input-grp mt-3">
+            <label> Bus Class </label> <select class="custom-select"> <option value="1"> General </option> <option value="2"> Superior </option> <option value="3"> Premium </option>  </select>
+          </div>
+
+        <div class="input-grp">
+          <button type="button" class="btn btn-success mt-3"> Search </button>
+        </div>
+  
+      </section>
+      <!-- Booking Form End -->
+
     </main>
     <!-- Main End -->
 
     <!-- Footer Start -->
     <footer class="container-fluid g-0 mt-4">
-      <section class="">
-        <p> FOOTER </p>
+      <section class="d-flex flex-wrap ">
+        <!-- Footer Logo Start -->
+        <section class="col-12 col-md-2 container-logotype-f border-end">
+          <ul class="list-inline">
+            <li>
+              <a href="index.html" class="text-decoration-none">
+                <span class="inactive inicio">   
+                  <i><img src="https:via.placeholder.com/100" class="wow animate__animated animate__slideInLeft animate__slow" alt="logo bus company"></i>
+                  Home
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- Footer Logo End -->
+
+        <!-- Direcction Start -->
+        <section class="col-12 col-md-3 container-direction mt-3">
+          <div> Lorem ipsum dolor sit amet </div>          
+          <div> ©2022 All Right Reserved </div>
+          <div> <p><a href="#" class="inactive link text-decoration-none">Privacy</a> & <a href="#" class="inactive link text-decoration-none">Terms</a></p> </div>
+        </section>
+        <!-- Direction End -->
+
+        <section class="col-12 col-md-7 container-social border-start">
+          <ul class="list-inline">
+            <li>
+              <a class="mx-4" href="#" target="_blank">
+                Social Media 1
+              </a>
+              <a class="mx-4" href="#" target="_blank">
+                Social Media 2
+              </a>
+              <a class="mx-4" href="#" target="_blank">
+                Social Media 3
+              </a>
+              <a class="mx-4" href="#" target="_blank">
+                Social Media 4
+              </a>
+            </li>
+          </ul>
+          <div> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </div>          
+          <div> Lorem ipsum dolor sit amet </div>          
+        </section>
       </section>
     </footer>
     <!-- Footer End -->

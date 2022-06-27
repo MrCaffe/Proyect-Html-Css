@@ -1,0 +1,42 @@
+$colors: (
+	color-principal: #00bcd4,
+	color-bars: #191919,
+	color-black: #000000,
+	color-white: #ffffff,
+	color-gray: #808080,
+	color-blue: #1d2af2,
+	color-light-blue: #1da1f2,
+	color-pink: #f21d81,
+	color-red: #ff1616,
+	color-green: #00bb0b,
+	color-turquoise: #1ebea5,
+	color-greenSoft: #008440d6
+);
+
+$font-weights: (
+ 	light: 300,
+ 	regular: 400,
+ 	medium: 500,
+ 	semi-bold: 600,
+ 	bold: 700,
+ 	extra-bold: 800
+);
+
+$spacesEm: (
+	nothing: 0em,
+	very-small: 1em,
+	small: 2em,
+	medium: 4em,
+	large: 6em,
+	very-large: 7em
+);
+
+$spacesRem: (
+	nothing: 0em,
+	very-small: 1rem,
+	small: 2rem,
+	medium: 4rem,
+	large: 6rem,
+	very-large: 7rem,
+	extra-large: 8rem
+);
